@@ -1,53 +1,37 @@
 <div class="register">
     <p class="register__title">register works!</p>
     <div class="register__form">
-        <form action="/users/register">
-            <div class="register__emailAdress">
-                <label>Email adress</label>
-                <input 
-                    name="emailAdress"
-                    [(ngModel)]="user.emailAdress"
-                    #name="ngModel"
-                    required
-                    minlength="5"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    placeholder="Enter your email adress."
-                >
+        <form novalidate 
+        #f="ngForm"
+        [formGroup]="form"
+        (ngSubmit)="submitForm(f)">
+            <div class="register__danger"
+            *ngIf='formSubmitted && form.invalid'>
+                <span>Kolejny div i znowu to samo...</span>
+                <ul>
+                    <li *ngFor="let error of form.getFormValidationMessages()">
+                        {{error}}
+                    </li>
+                </ul>
+            </div>    
+            
+            <div class="register__inputs"
+                *ngFor="let control of form.userControls">
+                <label>
+                    {{control.label}}
+                </label>
+                <input class="register__main"
+                    [(ngModel)]="user[control.modelProperty]"
+                    name="{{control.modelProperty}}"
+                    formControlName="{{control.modelProperty}}"/>
+                <ul class="register__danger"
+                    *ngIf="(formSubmitted || control.dirty) && control.invalid">
+                    <li *ngFor="let error of control.getFormValidationMessages()">
+                        {{error}}
+                    </li>
+                </ul>
             </div>
-            <div class="register__password">
-                <label>Password</label>
-                <input 
-                    name="password"
-                    [(ngModel)]="user.password"
-                    #name="ngModel"
-                    required
-                    minlength="2"
-                    pattern="[A-Za-z ]+$"
-                    placeholder="Enter your password."
-                    >
-            </div>
-            <div class="register__firstName">
-                <label>First name</label>
-                <input 
-                    name="firstName"
-                    [(ngModel)]="user.firstName"
-                    #name="ngModel"
-                    required
-                    minlength="2"
-                    pattern="[A-Za-z ]+$"
-                    placeholder="Enter your name.">
-            </div>
-            <div class="register__secondName">
-                <label>Second name</label>
-                <input 
-                    name="secondName"
-                    [(ngModel)]="user.secondName"
-                    #name="ngModel"
-                    required
-                    minlength="2"
-                    pattern="[A-Za-z ]+$"
-                    placeholder="Enter your second name.">
-            </div>
+            
             <button 
             class="register__submit" 
             type="submit">

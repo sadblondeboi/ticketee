@@ -10,7 +10,7 @@ import { UserFormGroup } from '../models/user/form.user';
 })
 export class RegisterComponent implements OnInit {
   public user: User;
-  public userFormGroup = new UserFormGroup();
+  public form: UserFormGroup = new UserFormGroup();
   public formSubmitted: boolean;
 
   get jsonUser(): string {
@@ -22,6 +22,7 @@ export class RegisterComponent implements OnInit {
   }
 
   submitForm(form: NgForm): void {
+    console.log(form);
     this.formSubmitted = true;
     if (form.valid) {
       this.addUser(this.user);
@@ -35,6 +36,8 @@ export class RegisterComponent implements OnInit {
         isPremium: false,
         creditCards: []
       };
+      form.reset();
+      this.formSubmitted = false;
     }
   }
 
