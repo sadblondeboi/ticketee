@@ -1,0 +1,65 @@
+<div class="register">
+    <p class="register__title">register works!</p>
+    <div class="register__form">
+        <form action="/users/register">
+            <div class="register__emailAdress">
+                <label>Email adress</label>
+                <input 
+                    name="emailAdress"
+                    [(ngModel)]="user.emailAdress"
+                    #name="ngModel"
+                    required
+                    minlength="5"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    placeholder="Enter your email adress."
+                >
+            </div>
+            <div class="register__password">
+                <label>Password</label>
+                <input 
+                    name="password"
+                    [(ngModel)]="user.password"
+                    #name="ngModel"
+                    required
+                    minlength="2"
+                    pattern="[A-Za-z ]+$"
+                    placeholder="Enter your password."
+                    >
+            </div>
+            <div class="register__firstName">
+                <label>First name</label>
+                <input 
+                    name="firstName"
+                    [(ngModel)]="user.firstName"
+                    #name="ngModel"
+                    required
+                    minlength="2"
+                    pattern="[A-Za-z ]+$"
+                    placeholder="Enter your name.">
+            </div>
+            <div class="register__secondName">
+                <label>Second name</label>
+                <input 
+                    name="secondName"
+                    [(ngModel)]="user.secondName"
+                    #name="ngModel"
+                    required
+                    minlength="2"
+                    pattern="[A-Za-z ]+$"
+                    placeholder="Enter your second name.">
+            </div>
+            <button 
+            class="register__submit" 
+            type="submit">
+                Register
+            </button>
+        </form>
+
+        <p class="register__account">
+            Already have an account? 
+            <a class="register__login" href="/users/login">
+                Login
+            </a>
+        </p>
+    </div>
+</div>
