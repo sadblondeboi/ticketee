@@ -1,6 +1,6 @@
 import { CreditCard } from '../card/creditCard';
 
-export interface User {
+export class User {
     id: number;
     emailAdress: string;
     password: string;
@@ -8,5 +8,5 @@ export interface User {
     secondName: string;
     readonly registrationDate: Date;
     isPremium: boolean;
-    creditCards: CreditCard[];
+    creditCards?: CreditCard[];
 }

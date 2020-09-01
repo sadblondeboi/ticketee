@@ -45,7 +45,7 @@ export class UserFormControl extends FormControl {
 export class UserFormGroup extends FormGroup {
     constructor() {
         super({
-            emailAdress: new UserFormControl('Email adress', 'emailAdress', '', Validators.compose([
+            emailAddress: new UserFormControl('Email address', 'emailAddress', '', Validators.compose([
                 Validators.required,
                 Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'),
                 Validators.minLength(2),

@@ -9,7 +9,17 @@ import { UserFormGroup } from '../models/user/form.user';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  public user: User;
+  public user = new User();
+  // public user2 = {
+  //   id: 68,
+  //   emailAdress: '',
+  //   password: '',
+  //   firstName: '',
+  //   secondName: '',
+  //   registrationDate: new Date(),
+  //   isPremium: false,
+  //   creditCards: []
+  // };
   public form: UserFormGroup = new UserFormGroup();
   public formSubmitted: boolean;
 
@@ -22,20 +32,10 @@ export class RegisterComponent implements OnInit {
   }
 
   submitForm(form: NgForm): void {
-    console.log(form);
     this.formSubmitted = true;
     if (form.valid) {
       this.addUser(this.user);
-      this.user = {
-        id: 68,
-        emailAdress: '',
-        password: '',
-        firstName: '',
-        secondName: '',
-        registrationDate: new Date(),
-        isPremium: false,
-        creditCards: []
-      };
+      this.user = new User();
       form.reset();
       this.formSubmitted = false;
     }
