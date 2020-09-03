@@ -1,0 +1,15 @@
+.button {
+    $this: &;
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+    float: right;
+
+    #{$this}__icon {
+        display: inline-block;
+        vertical-align: middle;          
+    }
+
+}

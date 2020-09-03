@@ -6,7 +6,7 @@ export class User {
     password: string;
     firstName: string;
     secondName: string;
-    readonly registrationDate: Date;
+    registrationDate: Date;
     isPremium: boolean;
     creditCards?: CreditCard[];
 }

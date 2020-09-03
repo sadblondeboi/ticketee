@@ -82,7 +82,7 @@ export class UserFormGroup extends FormGroup {
     }
 
     getFormValidationMessages(form: any): string[] {
-        let messages: string[] = [];
+        const messages: string[] = [];
         this.userControls.forEach(c  => c.getValidationMessages()
             .forEach(m => messages.push(m)));
         return messages;

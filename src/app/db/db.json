@@ -1,0 +1,25 @@
+{
+    "events" : [
+        {
+            "name" : "Natalia Przybysz „JAK MALOWAĆ OGIEŃ” - koncert live stream",
+            "artists" : "Natalia Przybysz",
+            "date": "19/06/2020",
+            "ticketPrice" : "70",
+            "descritpion" : "Mamy wielką przyjemność poinformować, że kolejną Artystką którą zaprezentujemy w ramach cyklu koncertów „dla WAS graMY” będzie Natalia Przybysz!",
+            "maxTickets" : 500,
+            "actualTickets" : 250
+        }
+    ],
+
+    "users" : [
+        {
+        "id" : "",
+        "login": "",
+        "password": "",
+        "name" : "",
+        "portrait" : "",
+        "balance" : 0,
+        "cards": []
+        }
+    ]
+}

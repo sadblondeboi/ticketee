@@ -10,16 +10,6 @@ import { UserFormGroup } from '../models/user/form.user';
 })
 export class RegisterComponent implements OnInit {
   public user = new User();
-  // public user2 = {
-  //   id: 68,
-  //   emailAdress: '',
-  //   password: '',
-  //   firstName: '',
-  //   secondName: '',
-  //   registrationDate: new Date(),
-  //   isPremium: false,
-  //   creditCards: []
-  // };
   public form: UserFormGroup = new UserFormGroup();
   public formSubmitted: boolean;
 
@@ -34,6 +24,7 @@ export class RegisterComponent implements OnInit {
   submitForm(form: NgForm): void {
     this.formSubmitted = true;
     if (form.valid) {
+      this.user.registrationDate = new Date();
       this.addUser(this.user);
       this.user = new User();
       form.reset();

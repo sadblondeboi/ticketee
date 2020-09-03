@@ -1,0 +1,38 @@
+.header {
+    $this: &;
+
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: calc(100% - 2 * 1.5rem);
+    padding: 2rem 1.5rem;
+    z-index: 1000;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+
+    &__title {
+        text-decoration: none;
+        font-size: 2rem;
+        letter-spacing: .25rem;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__left {
+        width: calc(100%/3);
+        display: block;
+    }
+
+
+    &__center {
+        width: calc(100%/3);
+        display: block;
+    }
+
+    &__right {
+        width: calc(100%/3);
+        display: block;
+    }
+}

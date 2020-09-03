@@ -6,12 +6,16 @@ import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HeaderComponent } from './header/header.component';
+import { MenuButtonComponent } from './buttons/menu-button/menu-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeaderComponent,
+    MenuButtonComponent
   ],
   imports: [
     BrowserModule,
