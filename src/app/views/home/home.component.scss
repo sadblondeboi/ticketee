@@ -1,0 +1,8 @@
+.home {
+    $this: &;
+
+    &__header {
+        height: 5vh;
+        padding: 2rem 1.5rem;
+    }
+}

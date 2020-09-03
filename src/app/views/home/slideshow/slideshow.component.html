@@ -1,0 +1,23 @@
+<div class="slideshow">
+    <div class="slideshow__content">
+        <!-- kurwaa -->
+        <carousel
+            cellWidth="100%"
+            pauseOnHover="true"
+            dots="true"
+            arrows="true"
+            autoplay="true"
+            > 
+            <div class="carousel-cell" 
+            *ngFor="let image of images">
+                <img id="slideshow__img"
+                src="{{image.path}}"
+                alt="`Image {{image.id}}`">
+                <div class="slideshow__text">
+                    <span>{{image.text}}</span>
+                </div>
+            </div>
+        </carousel>
+
+    </div>
+</div>

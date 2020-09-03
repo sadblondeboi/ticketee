@@ -1,0 +1,23 @@
+.slideshow {
+    $this: &;
+    
+    position: relative;
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+// I have no idea how to style imgs inside the custom component so I used id for that
+//  I know it's not a good idea but I'm desperate ok
+#slideshow__img {
+    height: auto;
+    object-fit: fill;
+}
