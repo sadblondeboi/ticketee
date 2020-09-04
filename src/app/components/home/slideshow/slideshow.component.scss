@@ -14,6 +14,11 @@
         font-size: 1.5rem;
         color: white;
     }
+
+    &__img {
+        // height: auto !important;
+        // object-fit: fill !important; <- nie dziala
+    }
 }
 // I have no idea how to style imgs inside the custom component so I used id for that
 //  I know it's not a good idea but I'm desperate ok

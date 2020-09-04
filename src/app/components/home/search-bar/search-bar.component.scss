@@ -1,0 +1,21 @@
+.search-bar {
+    $this: &;
+    margin: 0 1rem; 
+    padding: .75rem;
+
+    &__search {
+        // height: 2rem;
+        padding: .5rem 1rem;
+        width: calc(100% - 2 * (1rem + 1px));
+        border: solid rgb(112, 112, 112, .2) 1px;
+        border-radius: 1rem;
+        box-shadow: 0 3px 6px rgb(0, 0, 0, .10);
+    }
+
+    &__filters {
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

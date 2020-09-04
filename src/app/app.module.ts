@@ -5,12 +5,18 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { HeaderComponent } from './header/header.component';
-import { MenuButtonComponent } from './buttons/menu-button/menu-button.component';
-import { SlideshowComponent } from './views/home/slideshow/slideshow.component';
+import { WelcomeComponent } from './views/welcome/welcome.component';
 import { HomeComponent } from './views/home/home.component';
+
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+
+import { RegisterComponent } from './components/register/register.component';
+import { SlideshowComponent } from './components/home/slideshow/slideshow.component';
+import { SearchBarComponent } from './components//home/search-bar/search-bar.component';
+
+import { MenuButtonComponent } from './buttons/menu-button/menu-button.component';
+import { ButtonComponent } from './buttons/button/button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,10 @@ import { HomeComponent } from './views/home/home.component';
     HeaderComponent,
     MenuButtonComponent,
     SlideshowComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    SearchBarComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
