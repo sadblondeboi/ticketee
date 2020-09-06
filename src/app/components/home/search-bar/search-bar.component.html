@@ -3,17 +3,17 @@
     <div class="search-bar__filters">
         <div class="search-bar__hottest">
             <app-button [buttonConfig]="textBtnConfig[0]"
-                        (textBtnClickEmot)="onClickEventReceived($event)"            
+                        (event)="onClickEventReceived($event)"            
             ></app-button>
         </div>
         <div class="search-bar__newest">
             <app-button [buttonConfig]="textBtnConfig[1]"
-                        (textBtnClickEmot)="onClickEventReceived($event)" 
+                        (event)="onClickEventReceived($event)" 
             ></app-button>
         </div>
         <div class="search-bar__nearby">
             <app-button [buttonConfig]="textBtnConfig[2]"
-                        (textBtnClickEmot)="onClickEventReceived($event)" 
+                        (event)="onClickEventReceived($event)" 
             ></app-button>
         </div>
     </div>

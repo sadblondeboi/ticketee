@@ -17,6 +17,7 @@ import { SearchBarComponent } from './components//home/search-bar/search-bar.com
 
 import { MenuButtonComponent } from './buttons/menu-button/menu-button.component';
 import { ButtonComponent } from './buttons/button/button.component';
+import { EventListComponent } from './components/home/event-list/event-list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ButtonComponent } from './buttons/button/button.component';
     HomeComponent,
     FooterComponent,
     SearchBarComponent,
-    ButtonComponent
+    ButtonComponent,
+    EventListComponent
   ],
   imports: [
     BrowserModule,

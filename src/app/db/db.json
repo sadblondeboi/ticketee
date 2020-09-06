@@ -2,12 +2,11 @@
     "events" : [
         {
             "name" : "Natalia Przybysz „JAK MALOWAĆ OGIEŃ” - koncert live stream",
-            "artists" : "Natalia Przybysz",
+            "artist" : "Natalia Przybysz",
+            "url" : "https://www.vogue.pl/uploads/repository/newsy/natalia-przybysz-foto-silvia-pogoda-1.jpg",
             "date": "19/06/2020",
-            "ticketPrice" : "70",
-            "descritpion" : "Mamy wielką przyjemność poinformować, że kolejną Artystką którą zaprezentujemy w ramach cyklu koncertów „dla WAS graMY” będzie Natalia Przybysz!",
-            "maxTickets" : 500,
-            "actualTickets" : 250
+            "time": "19:00",
+            "ticketPrice" : "70"
         }
     ],
 

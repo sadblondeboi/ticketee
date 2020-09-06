@@ -4,7 +4,8 @@
 <ng-template #text>
     <button type="button"
             [ngStyle]="buttonConfig.styles"
-            (click)="onTextBtnClick()">
+            [ngClass]="buttonConfig.active ? 'success' : 'danger'"
+            (click)="textBtnClickEmot()">
         {{buttonConfig.text | lowercase}}
     </button>
 </ng-template>
@@ -13,5 +14,6 @@
     <img alt="image button"
          [src]="buttonConfig.src"
          [ngStyle]="buttonConfig.styles"
+         [ngClass]="buttonConfig.active ? 'success' : 'danger'"
          (click)="onImgBtnClick()">
 </ng-template>
