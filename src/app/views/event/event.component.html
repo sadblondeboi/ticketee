@@ -1,6 +1,14 @@
 <div class="event">
-    <div class="event__content">
-        <img class="event__background" src="{{event.url}}" alt="cover photo">
-
+    <img class="event__image" src="{{event.url}}" alt="cover photo">
+    <div class="event__text">
+        <div class="event__place">
+            <span>{{event.place}}</span>
+        </div>
+        <div class="event__name">
+            <span>{{event.name}}</span>
+        </div>
+        <div class="event__time">
+            <span>{{event.date}}, {{event.time}}</span>
+        </div>
     </div>
 </div>

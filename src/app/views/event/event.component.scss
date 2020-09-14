@@ -1,8 +1,45 @@
 .event {
     $this: &;
+    height: 23.5rem;
     position: relative;
 
-    &__background {
+    &__image {
+        position: absolute;
         max-width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    &__text {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-end;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+
+        background-color: rgba(0, 0, 0, .55);
+    }
+
+    &__place {
+        font-size: 1rem;        
+        text-transform: uppercase;
+        text-shadow: 1px 1px 2.25em black;
+    }
+
+    &__date {
+        font-size: 1rem;
+        text-shadow: 1px 1px 2.25em black;
+    }
+
+    &__name {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 2.25em black;
     }
 }
