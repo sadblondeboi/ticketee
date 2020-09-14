@@ -1,9 +1,15 @@
 <div class="event-list">
-    <div class="event-list__tiles">
         <div class="event-list__event"
              *ngFor="let event of events"
+             [ngStyle]="{'background-image': 'url('+event.url+')'}"
         >
-            {{event.name}}
+        <div class="event-list__content"
+             (click)="redirect(event.id)"
+             >
+             <span class="event-list__place">{{event.place}} </span>
+             <span class="event-list__name">{{event.name}} </span>
+             <span class="event-list__date">{{event.date}} </span>    
         </div>
-    </div>
+
+        </div>
 </div>

@@ -1,0 +1,8 @@
+.event {
+    $this: &;
+    position: relative;
+
+    &__background {
+        max-width: 100%;
+    }
+}

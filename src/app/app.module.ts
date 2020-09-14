@@ -5,7 +5,6 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './router/app-routing.module';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './views/welcome/welcome.component';
 import { HomeComponent } from './views/home/home.component';
 
 import { FooterComponent } from './footer/footer.component';
@@ -18,12 +17,12 @@ import { SearchBarComponent } from './components//home/search-bar/search-bar.com
 import { MenuButtonComponent } from './buttons/menu-button/menu-button.component';
 import { ButtonComponent } from './buttons/button/button.component';
 import { EventListComponent } from './components/home/event-list/event-list.component';
+import { EventComponent } from './views/event/event.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    WelcomeComponent,
     HeaderComponent,
     MenuButtonComponent,
     SlideshowComponent,
@@ -31,7 +30,8 @@ import { EventListComponent } from './components/home/event-list/event-list.comp
     FooterComponent,
     SearchBarComponent,
     ButtonComponent,
-    EventListComponent
+    EventListComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,

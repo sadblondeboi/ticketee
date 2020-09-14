@@ -20,7 +20,6 @@ export class ButtonComponent implements OnInit {
   }
 
   textBtnClickEmot(): void {
-    console.log(this.buttonConfig.active);
     this.buttonConfig.active = !this.buttonConfig.active;
     this.event.emit(this.buttonConfig.id);
   }

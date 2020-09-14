@@ -1,0 +1,8 @@
+.app {
+    $this: &;
+
+    &__header {
+        height: 3rem;
+        padding: 2rem 1.5rem;
+    }
+}

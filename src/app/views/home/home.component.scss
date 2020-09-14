@@ -1,17 +1,18 @@
 .home {
     $this: &;
 
-    &__header {
-        height: 3rem;
-        padding: 2rem 1.5rem;
-    }
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
 
     &__description {
         margin-top: .75rem;
         margin-left: 1.75rem;
         margin-right: 1.75rem;
-        text-align: center;
-        font-size: 1rem;
-        font-family: 'Open sans', sans-serif;
+    }
+
+    &__popular {
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
     }
 }
